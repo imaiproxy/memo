@@ -1,5 +1,6 @@
 export PATH="${HOME}/usr/bin:${PATH}"
 alias ..="cd .."
+alias CD="source CD"
 
 BSD_LS_FLAG="-laGF"
 GNU_LS_FLAG="-alF --color"
