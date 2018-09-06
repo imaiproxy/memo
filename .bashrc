@@ -1,3 +1,5 @@
+PS1="\$?:\W \u$ "
+
 export PATH="${HOME}/usr/bin:${PATH}"
 alias ..="cd .."
 alias CD="source CD"
