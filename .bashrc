@@ -10,6 +10,7 @@ GNU_LS_FLAG="-alF --color"
 case "${OSTYPE}" in
 darwin*)#BSD series
 	alias ls="ls ${BSD_LS_FLAG}"
+	alias rm='rmtrash'
 	export LSCOLORS=gxfxcxdxbxegexabagacad
 	export PATH="${PATH}:/Applications/microchip/xc8/v1.45/bin"
 	;;
@@ -23,3 +24,5 @@ alias ll=ls
 alias っl=ls
 alias lll=ls
 alias llll=ls
+
+alias emacs='vim'
