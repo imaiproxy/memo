@@ -1,5 +1,6 @@
 PS1="\$?:\W \u$ "
 
+export HISTTIMEFORMAT="%F %T "
 export PATH="${HOME}/usr/bin:${PATH}"
 alias ..="cd .."
 alias CD="source CD"
