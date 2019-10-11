@@ -1,5 +1,6 @@
 PS1="\$?:\W \u$ "
 
+export LS_COLORS='di=01;35'
 export HISTTIMEFORMAT="%F %T "
 export PATH="${HOME}/usr/bin:${PATH}"
 alias ..="cd .."
