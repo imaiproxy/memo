@@ -59,3 +59,6 @@ mkdir -p ~/usr/bin/  \
 mkdir -p ~/.cache/dein && cd ~/.cache/dein
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
+
+sudo apt install ruby
+sudo gem install one_gadget
