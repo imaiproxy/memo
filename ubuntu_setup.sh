@@ -2,7 +2,6 @@
 
 sudo apt update
 
-sudo apt install -y vim
 sudo apt install -y git
 sudo apt install -y build-essential
 sudo apt install -y python
@@ -10,6 +9,7 @@ sudo apt install -y python3
 sudo apt install -y python-pip
 sudo apt install -y python3-pip
 sudo apt install -y curl
+sudo apt install -y gdb
 
 # x86バイナリを動かす為のパッケージ
 dpkg --add-architecture i386
@@ -46,6 +46,20 @@ sudo python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools
 git clone https://github.com/radare/radare2
 sudo sh radare2/sys/install.sh
 
+# install vim
+git clone https://github.com/vim/vim.git
+cd vim
+./configure --prefix=/home/usr/
+make
+make install
+cd ..
+
+
+# install ruby
+sudo apt install -y ruby
+
+# install one_gadget
+sudo gem install one_gadget
 
 # install my script
 wget https://raw.githubusercontent.com/imaiproxy/memo/master/.vimrc -P ~/
@@ -59,6 +73,3 @@ mkdir -p ~/usr/bin/  \
 mkdir -p ~/.cache/dein && cd ~/.cache/dein
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
-
-sudo apt install ruby
-sudo gem install one_gadget
