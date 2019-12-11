@@ -62,11 +62,11 @@ sudo apt install -y ruby
 sudo gem install one_gadget
 
 # install my script
-wget https://raw.githubusercontent.com/imaiproxy/memo/master/.vimrc -P ~/
-wget https://raw.githubusercontent.com/imaiproxy/memo/master/.bashrc -P ~/
+wget https://raw.githubusercontent.com/pr0xy-t/memo/master/.vimrc -P ~/
+wget https://raw.githubusercontent.com/pr0xy-t/memo/master/.bashrc -P ~/
 
 mkdir -p ~/usr/bin/  \
-&& wget https://raw.githubusercontent.com/imaiproxy/memo/master/CD  \
+&& wget https://raw.githubusercontent.com/pr0xy-t/memo/master/CD  \
 && chmod +x CD \
 && mv CD ~/usr/bin/CD
 
