@@ -61,5 +61,8 @@ command_not_found_handle()
 	fi
 }
 
+
+complete -cf sudo
+
 PS1='$(check_return_code):$(check_aslr):\W \u$ '
 
