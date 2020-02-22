@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# bash complete custom script
+wget https://github.com/terralinux/systemd/raw/master/src/systemctl-bash-completion.sh -O /etc/bash_completion.d/systemctl-bash-completion.sh
+
 sudo apt update
 
 sudo apt install -y git
